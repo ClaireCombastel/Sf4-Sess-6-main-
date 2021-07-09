@@ -34,9 +34,20 @@ class Category
         $this->articles = new ArrayCollection();
     }
 
+
+
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+      /* Transform to string
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string) $this->getName();
     }
 
     public function getName(): ?string

@@ -31,6 +31,9 @@ class Article
      */
     private $category;
 
+   
+
+
     public function getId(): ?int
     {
         return $this->id;
